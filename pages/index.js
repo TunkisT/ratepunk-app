@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Card from '../Components/Card/Card';
 import Header from '../Components/Header/Header';
+import Main from '../Components/Main/Main';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -12,8 +14,18 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />
-
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <Main>
+          <Card
+            title='refer friends and get rewards'
+            text="Refer your friends to us and earn hotel booking vouchers. We'll give you 1 coin for each friend that installs our extension. Minimum cash-out at 20 coins."
+          />
+          <Card
+            title='refer friends and get rewards'
+            text="Refer your friends to us and earn hotel booking vouchers. We'll give you 1 coin for each friend that installs our extension. Minimum cash-out at 20 coins."
+          />
+        </Main>
+      </main>
 
       <footer className={styles.footer}>
         <a

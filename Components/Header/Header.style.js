@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 export const Inside = styled.div`
-  padding: 1rem;
+  padding: 1rem 0;
   display: flex;
   justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
   @media screen and (max-width: 768px) {
     margin: 0.1rem 0;
   }
