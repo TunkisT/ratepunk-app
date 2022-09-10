@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Card from '../Components/Card/Card';
 import Header from '../Components/Header/Header';
 import Main from '../Components/Main/Main';
+import StepCard from '../Components/StepCard/StepCard';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -20,10 +21,7 @@ export default function Home() {
             title='refer friends and get rewards'
             text="Refer your friends to us and earn hotel booking vouchers. We'll give you 1 coin for each friend that installs our extension. Minimum cash-out at 20 coins."
           />
-          <Card
-            title='refer friends and get rewards'
-            text="Refer your friends to us and earn hotel booking vouchers. We'll give you 1 coin for each friend that installs our extension. Minimum cash-out at 20 coins."
-          />
+          <StepCard />
         </Main>
       </main>
 

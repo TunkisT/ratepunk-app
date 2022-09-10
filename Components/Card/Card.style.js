@@ -5,8 +5,9 @@ export const Card = styled.div`
   border: 1px solid #1f343e;
   background: #f8f4f9;
   min-height: 407px;
-  padding: 4rem;
-  max-width: 304px;
+  padding: 3rem;
+  /* max-width: 544px; */
+  width: 50%;
 `;
 export const Title = styled.h2`
   text-align: left;
@@ -16,7 +17,6 @@ export const Title = styled.h2`
 `;
 export const Text = styled.p`
   text-align: left;
-  font: normal normal normal 20px/32px Noto Sans;
   letter-spacing: 0px;
   color: #1f343e;
 `;
