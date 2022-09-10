@@ -7,8 +7,10 @@ import Logo from '../../assets/Group 12.svg';
 function Header() {
   return (
     <S.Header>
-      <Image src={Logo} alt='ratepunk' />
-      <Navigation />
+      <S.Inside>
+        <Image src={Logo} alt='ratepunk' />
+        <Navigation />
+      </S.Inside>
     </S.Header>
   );
 }
