@@ -19,18 +19,20 @@ function Footer() {
           booking sites and runs a price comparison, so you can be confident in
           knowing you’re getting the best deal!
         </p>
-        <p style={{ color: '#6D7A80', fontSize: '16px' }}>
+        <p style={{ color: '#6D7A80', fontSize: '16px', padding: '0' }}>
           © 2021 Ratepunk. All Rights Reserved.
         </p>
       </S.First>
       <S.Second>
         <S.Small>
           <S.Titles> QUICK LINKS</S.Titles>
-          <Link href='#'>Price Comparison</Link>
-          <Link href='#'>Chrome Extension</Link>
-          <Link href='#'>How It Works</Link>
-          <Link href='#'>Ratepunk Blog</Link>
-          <Link href='#'>Privacy Policy</Link>
+          <div>
+            <Link href='#'>Price Comparison</Link>
+            <Link href='#'>Chrome Extension</Link>
+            <Link href='#'>How It Works</Link>
+            <Link href='#'>Ratepunk Blog</Link>
+            <Link href='#'>Privacy Policy</Link>
+          </div>
         </S.Small>
         <S.Small>
           <S.Contacts>
