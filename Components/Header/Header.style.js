@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Inside = styled.div`
-  padding: 1rem 0;
+  padding: 1rem ;
   display: flex;
   justify-content: space-between;
   max-width: 1120px;

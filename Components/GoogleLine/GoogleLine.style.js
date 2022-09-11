@@ -5,6 +5,7 @@ export const GoogleLine = styled.div`
   max-width: 1120px;
   margin: 0 auto;
   display: flex;
+  padding: 0 1rem;
   height: 100%;
   align-items: center;
   align-content: center;

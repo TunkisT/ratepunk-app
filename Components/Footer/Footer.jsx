@@ -1,13 +1,17 @@
-import React from 'react';
 import * as S from './Footer.style';
 import Image from 'next/image';
 import Logo from '../../assets/Group 12.svg';
+import Instagram from '../../assets/Icon awesome-instagram.svg';
+import Facebook from '../../assets/Icon awesome-facebook-f.svg';
+import LinkedIn from '../../assets/Icon awesome-linkedin-in.svg';
+import Twitter from '../../assets/Icon awesome-twitter.svg';
+import TikTok from '../../assets/Icon simple-tiktok.svg';
 import Link from 'next/link';
 
 function Footer() {
   return (
     <S.Footer>
-      <S.Section>
+      <S.First>
         <Image src={Logo} alt='ratepunk' />
         <p style={{ color: '#1F343E', fontSize: '16px' }}>
           Ratepunk compares hotel room prices across the major online travel
@@ -18,20 +22,42 @@ function Footer() {
         <p style={{ color: '#6D7A80', fontSize: '16px' }}>
           © 2021 Ratepunk. All Rights Reserved.
         </p>
-      </S.Section>
+      </S.First>
       <S.Second>
-        <S.Inside>
-          <h3> QUICK LINKS</h3>
+        <S.Small>
+          <S.Titles> QUICK LINKS</S.Titles>
           <Link href='#'>Price Comparison</Link>
           <Link href='#'>Chrome Extension</Link>
           <Link href='#'>How It Works</Link>
           <Link href='#'>Ratepunk Blog</Link>
           <Link href='#'>Privacy Policy</Link>
-        </S.Inside>
-        <S.Inside>
-          <h3>CONTACT</h3>
-          <p>hi@ratepunk.com</p>
-        </S.Inside>
+        </S.Small>
+        <S.Small>
+          <S.Contacts>
+            <S.Titles>CONTACT</S.Titles>
+            <p>hi@ratepunk.com</p>
+          </S.Contacts>
+          <S.Contacts>
+            <S.Titles>SOCIAL</S.Titles>
+            <S.IconList>
+              <S.Icon>
+                <S.Social src={Instagram} alt='Instagram' />
+              </S.Icon>
+              <S.Icon>
+                <S.Social src={Facebook} alt='Facebook' />
+              </S.Icon>
+              <S.Icon>
+                <S.Social src={LinkedIn} alt='LinkedIn' />
+              </S.Icon>
+              <S.Icon>
+                <S.Social src={Twitter} alt='Twitter' />
+              </S.Icon>
+              <S.Icon>
+                <S.Social src={TikTok} alt='TikTok' />
+              </S.Icon>
+            </S.IconList>
+          </S.Contacts>
+        </S.Small>
       </S.Second>
     </S.Footer>
   );
