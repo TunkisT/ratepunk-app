@@ -7,17 +7,17 @@ function GoogleLine() {
   return (
     <S.GoogleLine>
       <S.Card>
-        <S.Logo height='26px' width='48px' src={Chrome} alt='chrome' />
+        <S.Logo height='52px' width='56px' src={Chrome} alt='chrome' />
         <S.Text>
-          <p>available in the</p>
-          <p>chrome web store</p>
+          <S.Title>available in the</S.Title>
+          <S.Main>chrome web store</S.Main>
         </S.Text>
       </S.Card>
       <S.Card>
-        <S.Logo height='26px' width='48px' src={Apple} alt='Apple' />
+        <S.Logo height='52px' width='56px' src={Apple} alt='Apple' />
         <S.Text>
-          <p>available in the</p>
-          <p>apple app store</p>
+          <S.Title>available in the</S.Title>
+          <S.Main>apple app store</S.Main>
         </S.Text>
       </S.Card>
       <S.Text>
