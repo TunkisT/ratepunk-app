@@ -19,17 +19,22 @@ function StepCard() {
       <S.ListCard>
         <S.Element>
           <S.Step>step 1</S.Step>
-          <S.Title>invite friends</S.Title>
-          <S.Text>Refer friends with your unique referral link.</S.Text>
+          <S.Title>collect coins</S.Title>
+          <S.Text>
+            Get 1 coin for each friend that installs our extension using your
+            referral link.
+          </S.Text>
         </S.Element>
-        <S.Logo height='125px' width='128px' src={Collect} alt='mail' />
+        <S.Logo height='125px' width='128px' src={Collect} alt='coins' />
       </S.ListCard>
       <S.ListCard>
-        <S.Logo height='125px' width='128px' src={Voucher} alt='mail' />
+        <S.Logo height='125px' width='128px' src={Voucher} alt='voucher' />
         <S.Element>
           <S.Step>step 1</S.Step>
-          <S.Title>invite friends</S.Title>
-          <S.Text>Refer friends with your unique referral link.</S.Text>
+          <S.Title>get voucher</S.Title>
+          <S.Text>
+            Redeem for a $20 hotel booking voucher once you collect 20 coins.
+          </S.Text>
         </S.Element>
       </S.ListCard>
     </S.StepCard>

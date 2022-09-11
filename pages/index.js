@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Card from '../Components/Card/Card';
+import DarkFooter from '../Components/DarkFooter/DarkFooter';
+import GoogleLine from '../Components/GoogleLine/GoogleLine';
 import Header from '../Components/Header/Header';
 import Main from '../Components/Main/Main';
 import StepCard from '../Components/StepCard/StepCard';
@@ -25,17 +27,11 @@ export default function Home() {
         </Main>
       </main>
 
+      <DarkFooter>
+        <GoogleLine>black line</GoogleLine>
+      </DarkFooter>
       <footer className={styles.footer}>
-        <a
-          href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src='/vercel.svg' alt='Vercel Logo' width={72} height={16} />
-          </span>
-        </a>
+        
       </footer>
     </div>
   );
