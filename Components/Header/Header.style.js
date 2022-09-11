@@ -4,7 +4,7 @@ export const Inside = styled.div`
   padding: 1rem 0;
   display: flex;
   justify-content: space-between;
-  max-width: 1000px;
+  max-width: 1120px;
   margin: 0 auto;
   @media screen and (max-width: 768px) {
     margin: 0.1rem 0;

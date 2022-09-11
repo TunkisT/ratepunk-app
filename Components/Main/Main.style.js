@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Main = styled.div`
-  max-width: 1000px;
+  max-width: 1120px;
   margin: 0 auto;
   align-items: center;
   display: flex;

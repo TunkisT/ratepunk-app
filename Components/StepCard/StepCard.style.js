@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const StepCard = styled.div`
   height: 607px;
-  width: 50%;
+  width: 45%;
 `;
 export const ListCard = styled.div`
   display: flex;

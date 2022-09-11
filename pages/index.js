@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Card from '../Components/Card/Card';
 import DarkFooter from '../Components/DarkFooter/DarkFooter';
+import Footer from '../Components/Footer/Footer';
 import GoogleLine from '../Components/GoogleLine/GoogleLine';
 import Header from '../Components/Header/Header';
 import Main from '../Components/Main/Main';
@@ -28,10 +29,10 @@ export default function Home() {
       </main>
 
       <DarkFooter>
-        <GoogleLine>black line</GoogleLine>
+        <GoogleLine />
       </DarkFooter>
       <footer className={styles.footer}>
-        
+        <Footer />
       </footer>
     </div>
   );

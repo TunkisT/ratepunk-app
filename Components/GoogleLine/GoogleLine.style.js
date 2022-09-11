@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 export const GoogleLine = styled.div`
-  max-width: 1000px;
+  max-width: 1120px;
   margin: 0 auto;
   display: flex;
   height: 100%;

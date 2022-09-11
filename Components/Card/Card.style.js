@@ -7,7 +7,7 @@ export const Card = styled.div`
   min-height: 407px;
   padding: 3rem;
   /* max-width: 544px; */
-  width: 50%;
+  width: 45%;
 `;
 export const Title = styled.h2`
   text-align: left;
