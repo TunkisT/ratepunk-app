@@ -1,10 +1,10 @@
-import * as S from './Button.style';
+import css from './Button.module.scss';
 
-function Button({ children, color, type, onClick }) {
+function Button({ children, type }) {
   return (
-    <S.Button color={color} type={type} onClick={onClick}>
+    <button className={css.button} type={type}>
       {children}
-    </S.Button>
+    </button>
   );
 }
 

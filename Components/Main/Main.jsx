@@ -1,7 +1,7 @@
-import * as S from './Main.style';
+import css from './Main.module.scss';
 
 function Main({ children }) {
-  return <S.Main>{children}</S.Main>;
+  return <div className={css.main}>{children}</div>;
 }
 
 export default Main;

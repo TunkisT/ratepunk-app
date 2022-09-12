@@ -1,12 +1,11 @@
-import Image from 'next/image';
 import Navigation from '../Navigation/Navigation';
-import * as S from './Header.style';
+import css from './Header.module.scss';
 
 function Header() {
   return (
-    <S.Header>
+    <div className={css.header}>
       <Navigation />
-    </S.Header>
+    </div>
   );
 }
 

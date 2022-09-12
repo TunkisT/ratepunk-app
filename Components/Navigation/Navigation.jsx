@@ -1,4 +1,3 @@
-import * as S from './Navigation.style';
 import Image from 'next/image';
 import css from './Navigation.module.scss';
 import Logo from '../../assets/Group 12.svg';
