@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const Navi = styled.nav`
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const Navigate = styled.a`
@@ -13,8 +17,7 @@ export const Navigate = styled.a`
   padding: 0.3rem 2rem;
   text-decoration: 0;
   :hover {
-    background: grey;
-    color: white;
+    color: black;
     transition: 0.5s;
   }
 `;

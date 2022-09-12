@@ -3,10 +3,10 @@
 }
 
 .main {
-  min-height: 75vh;
   padding: 4rem 0;
   align-items: center;
   background: #F8CC5D;
+ 
 }
 
 .footer {
@@ -105,12 +105,6 @@
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
 
 @media (prefers-color-scheme: dark) {
   .card,

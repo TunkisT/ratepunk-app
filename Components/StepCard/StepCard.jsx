@@ -16,7 +16,7 @@ function StepCard() {
       </S.ListCard>
       <S.ListCard>
         <S.Element>
-          <S.Step>step 1</S.Step>
+          <S.Step>step 2</S.Step>
           <S.Title>collect coins</S.Title>
           <S.Text>
             Get 1 coin for each friend that installs our extension using your
@@ -28,7 +28,7 @@ function StepCard() {
       <S.ListCard>
         <S.Logo height='125px' width='128px' src={Voucher} alt='voucher' />
         <S.Element>
-          <S.Step>step 1</S.Step>
+          <S.Step>step 3</S.Step>
           <S.Title>get voucher</S.Title>
           <S.Text>
             Redeem for a $20 hotel booking voucher once you collect 20 coins.

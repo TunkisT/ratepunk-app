@@ -8,9 +8,10 @@ export const Card = styled.div`
   min-height: 797px;
   padding: 64px;
   width: 50%;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-evenly; */
+  @media screen and (max-width: 768px) {
+    padding: 16px 32px;
+    width: 100%;
+  }
 `;
 export const Title = styled.h2`
   font-family: 'Caveat Brush';
@@ -22,8 +23,10 @@ export const Title = styled.h2`
   color: #1f343e;
   text-transform: uppercase;
   margin: 0;
+  padding-bottom: 32px;
 `;
 export const Text = styled.p`
+  padding-bottom: 40px;
   text-align: left;
   letter-spacing: 0px;
   color: #1f343e;

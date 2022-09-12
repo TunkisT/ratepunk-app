@@ -12,6 +12,12 @@ export const Footer = styled.div`
   margin-bottom: 58px;
   margin-top: 64px;
   gap: 4rem;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
 `;
 
 export const First = styled.div`
@@ -20,6 +26,9 @@ export const First = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   width: 50%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const Second = styled.div`
@@ -27,6 +36,9 @@ export const Second = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   width: 50%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const Small = styled.div`
@@ -34,8 +46,14 @@ export const Small = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 export const Contacts = styled.div`
+@media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 export const Titles = styled.p`
   text-align: left;

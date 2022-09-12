@@ -12,7 +12,7 @@ function Card({ title, text }) {
       <Button type='submit' color='#4EB3E3'>
         Get Referral Link
       </Button>
-      <p style={{ color: '#6D7A80', fontSize: '16px' }}>
+      <p style={{ color: '#6D7A80', fontSize: '16px', margin: '0' }}>
         Limits on max rewards apply.
       </p>
     </S.Card>

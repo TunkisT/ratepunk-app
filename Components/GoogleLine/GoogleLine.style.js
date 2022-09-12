@@ -10,6 +10,11 @@ export const GoogleLine = styled.div`
   align-items: center;
   align-content: center;
   gap: 2rem;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+    padding: 32px;
+  }
 `;
 export const Card = styled.div`
   border: 1px solid #1f343e;

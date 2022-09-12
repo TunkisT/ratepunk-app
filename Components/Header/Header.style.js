@@ -7,7 +7,7 @@ export const Inside = styled.div`
   max-width: 1120px;
   margin: 0 auto;
   @media screen and (max-width: 768px) {
-    margin: 0.1rem 0;
+    flex-direction: column;
   }
 `;
 
