@@ -8,9 +8,7 @@ function Navigation() {
   return (
     <>
       <section className={css.topNav}>
-        <div>
-          <Image src={Logo} alt='ratepunk' />
-        </div>
+        <Image src={Logo} alt='ratepunk' />
         <input id='menu-toggle' className={css.menuToggle} type='checkbox' />
         <label className={css.menuButtonContainer} for='menu-toggle'>
           <div className={css.menuButton}></div>
