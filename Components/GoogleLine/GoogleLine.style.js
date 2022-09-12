@@ -8,6 +8,7 @@ export const GoogleLine = styled.div`
   padding: 0 1rem;
   height: 100%;
   align-items: center;
+  align-content: center;
   gap: 2rem;
   @media screen and (max-width: 768px) {
     width: 100%;

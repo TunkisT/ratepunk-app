@@ -3,17 +3,19 @@ import Image from 'next/image';
 import '@fontsource/caveat-brush';
 
 export const StepCard = styled.div`
-  min-height: 669px;
+  height: 669px;
   width: 45%;
   @media screen and (max-width: 768px) {
     width: 100%;
     gap: 48px;
+    min-height: 669px;
   }
 `;
 export const ListCard = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  flex-direction: row;
   margin-bottom: 64px;
   @media screen and (max-width: 768px) {
     align-items: center;
@@ -25,7 +27,10 @@ export const ListCard = styled.div`
 `;
 export const Logo = styled(Image)``;
 export const Element = styled.div`
-  width: 100%;
+  width: 50%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 export const Step = styled.p`
   letter-spacing: 1.6px;
