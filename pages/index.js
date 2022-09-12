@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.scss';
+import styles from '../styles/Home.module.sass';
 import Head from 'next/head';
 import Card from '../Components/Card/Card';
 import DarkFooter from '../Components/DarkFooter/DarkFooter';

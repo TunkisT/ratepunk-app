@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import css from './Navigation.module.scss';
-import Logo from '../../assets/Group 12.svg';
+import css from './Navigation.module.sass';
 import Link from 'next/link';
+import Image from 'next/image';
+import Logo from '../../assets/Group 12.svg';
 
 function Navigation() {
   return (

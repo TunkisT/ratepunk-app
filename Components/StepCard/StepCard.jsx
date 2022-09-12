@@ -1,8 +1,8 @@
-import css from './StepCard.module.scss';
+import css from './StepCard.module.sass';
+import Image from 'next/image';
 import Invite from '../../assets/Invite Friends Img.svg';
 import Collect from '../../assets/Collect coins img.svg';
 import Voucher from '../../assets/Get voucher img.svg';
-import Image from 'next/image';
 
 function StepCard() {
   return (

@@ -1,4 +1,4 @@
-import css from './Input.module.scss';
+import css from './Input.module.sass';
 
 function Input({ name, type, placeholder, handleChange }) {
   const onChange = (event) => {

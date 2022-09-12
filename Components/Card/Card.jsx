@@ -1,6 +1,6 @@
 import Button from '../Button/Button';
 import Input from '../Input/Input';
-import css from './Card.module.scss';
+import css from './Card.module.sass';
 
 function Card({ title, text }) {
   return (
