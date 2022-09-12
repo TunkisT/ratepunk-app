@@ -9,7 +9,7 @@ function Navigation() {
       <section className={css.topNav}>
         <Image src={Logo} alt='ratepunk' />
         <input id='menu-toggle' className={css.menuToggle} type='checkbox' />
-        <label className={css.menuButtonContainer} for='menu-toggle'>
+        <label className={css.menuButtonContainer} htmlFor='menu-toggle'>
           <div className={css.menuButton}></div>
         </label>
         <ul className={css.menu}>
