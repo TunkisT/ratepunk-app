@@ -7,7 +7,7 @@ function Header() {
   return (
     <S.Header>
       <S.Inside>
-        <Image src={Logo} alt='ratepunk' />
+        {/* <Image src={Logo} alt='ratepunk' /> */}
         <Navigation />
       </S.Inside>
     </S.Header>

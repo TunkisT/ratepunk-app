@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const Inside = styled.div`
-  padding: 1rem ;
+  padding: 12px 16px;
   display: flex;
   justify-content: space-between;
   max-width: 1120px;
   margin: 0 auto;
+  height: 56px;
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
