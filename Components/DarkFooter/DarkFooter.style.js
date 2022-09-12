@@ -6,6 +6,6 @@ export const DarkFooter = styled.div`
   color: #ffffff;
   height: 144px;
   @media screen and (max-width: 768px) {
-    min-height: 144px;
+    height: 100%;
   }
 `;
