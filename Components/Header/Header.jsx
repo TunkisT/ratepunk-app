@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 import Navigation from '../Navigation/Navigation';
 import * as S from './Header.style';

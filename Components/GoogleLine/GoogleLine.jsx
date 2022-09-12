@@ -1,4 +1,3 @@
-import React from 'react';
 import * as S from './GoogleLine.style';
 import Chrome from '../../assets/Chrome Icon.svg';
 import Apple from '../../assets/Apple Store Icon.svg';

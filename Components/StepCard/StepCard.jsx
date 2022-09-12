@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import React from 'react';
 import * as S from './StepCard.style';
 import Invite from '../../assets/Invite Friends Img.svg';
 import Collect from '../../assets/Collect coins img.svg';

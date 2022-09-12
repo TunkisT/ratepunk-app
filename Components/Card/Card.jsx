@@ -1,4 +1,3 @@
-import React from 'react';
 import Button from '../Button/Button';
 import Input from '../Input/Input';
 import * as S from './Card.style';
