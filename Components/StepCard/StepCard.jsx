@@ -1,41 +1,42 @@
-import * as S from './StepCard.style';
+import css from './StepCard.module.scss';
 import Invite from '../../assets/Invite Friends Img.svg';
 import Collect from '../../assets/Collect coins img.svg';
 import Voucher from '../../assets/Get voucher img.svg';
+import Image from 'next/image';
 
 function StepCard() {
   return (
-    <S.StepCard>
-      <S.ListCard>
-        <S.Logo height='125px' width='128px' src={Invite} alt='mail' />
-        <S.Element>
-          <S.Step>step 1</S.Step>
-          <S.Title>invite friends</S.Title>
-          <S.Text>Refer friends with your unique referral link.</S.Text>
-        </S.Element>
-      </S.ListCard>
-      <S.ListCard>
-        <S.Element>
-          <S.Step>step 2</S.Step>
-          <S.Title>collect coins</S.Title>
-          <S.Text>
+    <div className={css.stepCard}>
+      <div className={css.listCard}>
+        <Image height='125px' width='128px' src={Invite} alt='mail' />
+        <div className={css.element}>
+          <p className={css.step}>step 1</p>
+          <p className={css.title}>invite friends</p>
+          <p className={css.text}>Refer friends with your unique referral link.</p>
+        </div>
+      </div>
+      <div className={css.listCard}>
+        <div className={css.element}>
+          <p className={css.step}>step 2</p>
+          <p className={css.title}>collect coins</p>
+          <p className={css.text}>
             Get 1 coin for each friend that installs our extension using your
             referral link.
-          </S.Text>
-        </S.Element>
-        <S.Logo height='125px' width='128px' src={Collect} alt='coins' />
-      </S.ListCard>
-      <S.ListCard>
-        <S.Logo height='125px' width='128px' src={Voucher} alt='voucher' />
-        <S.Element>
-          <S.Step>step 3</S.Step>
-          <S.Title>get voucher</S.Title>
-          <S.Text>
+          </p>
+        </div>
+        <Image height='125px' width='128px' src={Collect} alt='coins' />
+      </div>
+      <div className={css.listCard}>
+        <Image height='125px' width='128px' src={Voucher} alt='voucher' />
+        <div className={css.element}>
+          <p className={css.step}>step 3</p>
+          <p className={css.title}>get voucher</p>
+          <p className={css.text}>
             Redeem for a $20 hotel booking voucher once you collect 20 coins.
-          </S.Text>
-        </S.Element>
-      </S.ListCard>
-    </S.StepCard>
+          </p>
+        </div>
+      </div>
+    </div>
   );
 }
 

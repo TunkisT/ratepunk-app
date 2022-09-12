@@ -1,7 +1,7 @@
-import * as S from './DarkFooter.style';
+import css from './DarkFooter.module.scss';
 
 function DarkFooter({ children }) {
-  return <S.DarkFooter>{children}</S.DarkFooter>;
+  return <div className={css.darkFooter}>{children}</div>;
 }
 
 export default DarkFooter;

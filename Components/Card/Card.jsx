@@ -1,21 +1,17 @@
 import Button from '../Button/Button';
 import Input from '../Input/Input';
-import * as S from './Card.style';
+import css from './Card.module.scss';
 
 function Card({ title, text }) {
   return (
-    <S.Card>
-      <S.Title>{title}</S.Title>
-      <S.Text>{text}</S.Text>
-      <p style={{ color: '#ED6F82', fontSize: '12px' }}>Error state</p>
+    <div className={css.card}>
+      <p className={css.title}>{title}</p>
+      <p className={css.text}>{text}</p>
+      <p className={css.error}>Error state</p>
       <Input placeholder='Enter your email address' type='email' />
-      <Button type='submit' color='#4EB3E3'>
-        Get Referral Link
-      </Button>
-      <p style={{ color: '#6D7A80', fontSize: '16px', margin: '0' }}>
-        Limits on max rewards apply.
-      </p>
-    </S.Card>
+      <Button type='submit'>Get Referral Link</Button>
+      <p className={css.lastLine}>Limits on max rewards apply.</p>
+    </div>
   );
 }
 
