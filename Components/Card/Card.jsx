@@ -4,6 +4,7 @@ import Input from '../Input/Input';
 import css from './Card.module.sass';
 import Img from '../../assets/success.jpg';
 import Image from 'next/image';
+const linkForCopy = 'https://ratepunk.com/referral';
 
 function Card({ title, text }) {
   const [lastEmail, setEmail] = useState({
@@ -35,6 +36,12 @@ function Card({ title, text }) {
     req.send(JSON.stringify(lastEmail));
   }
 
+  function copyLink(e) {
+    e.preventDefault();
+    navigator.clipboard.writeText(linkForCopy);
+    alert('Copied the text: ' + linkForCopy);
+  }
+
   return (
     <div className={css.card}>
       <p className={css.title}>{title}</p>
@@ -55,17 +62,30 @@ function Card({ title, text }) {
           </div>
         )}
       </div>
+      {form !== 'OK' ? (
+        <form onSubmit={formHandler}>
+          <Input
+            placeholder='Enter your email address'
+            type='email'
+            name='email'
+            handleChange={(email) => setEmail({ ...lastEmail, email })}
+          />
+          <Button type='submit'>Get Referral Link</Button>
+        </form>
+      ) : (
+        <form onSubmit={copyLink}>
+          <input
+            placeholder={linkForCopy}
+            className={css.newInput}
+            type='text'
+            name='link'
+          />
+          <button type='submit' className={css.newButton}>
+            Copy
+          </button>
+        </form>
+      )}
 
-      <form onSubmit={formHandler}>
-        <Input
-          placeholder='Enter your email address'
-          type='email'
-          name='email'
-          labelText='Email'
-          handleChange={(email) => setEmail({ ...lastEmail, email })}
-        />
-        <Button type='submit'>Get Referral Link</Button>
-      </form>
       <p className={css.lastLine}>Limits on max rewards apply.</p>
     </div>
   );
