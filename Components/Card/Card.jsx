@@ -41,7 +41,6 @@ function Card({ title, text }) {
     navigator.clipboard.writeText(linkForCopy);
     alert('Copied the text: ' + linkForCopy);
   }
-
   return (
     <div className={css.card}>
       <p className={css.title}>{title}</p>
