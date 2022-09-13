@@ -1,46 +1,46 @@
 @import @fontsource/caveat-brush
 
 .card
+    background: #f8f4f9
     border-radius: 16px
     border: 1px solid #1f343e
-    background: #f8f4f9
     min-height: 797px
     padding: 64px
     width: 50%
-    @media screen and (max-width: 768px)
-        padding: 32px 16px
-        width: 100%
+    @media screen and (max-width: 1012px)
         margin: 0
         min-height: 0
+        padding: 32px 16px
+        width: 100%
 
 .title
-    font-family: 'Caveat Brush'
-    text-align: left
-    letter-spacing: 0px
-    font-style: normal
-    font-size: 48px
-    line-height: 72px
     color: #1f343e
-    text-transform: uppercase
+    font-family: 'Caveat Brush'
+    font-size: 48px
+    font-style: normal
+    letter-spacing: 0px
+    line-height: 72px
     margin: 0
     padding-bottom: 32px
-    @media screen and (max-width: 768px)
+    text-align: left
+    text-transform: uppercase
+    @media screen and (max-width: 1012px)
         padding-bottom: 24px
 
 .text
-    padding-bottom: 40px
-    text-align: left
+    color: #1f343e
     font-size: 20px
     letter-spacing: 0px
-    color: #1f343e
     margin: 0
-    @media screen and (max-width: 768px)
+    padding-bottom: 40px
+    text-align: left
+    @media screen and (max-width: 1012px)
         padding-bottom: 24px
 
 .error
     color: #ED6F82
     font-size: 12px
-    @media screen and (max-width: 768px)
+    @media screen and (max-width: 1012px)
         font-size: 0.01px
 
 .lastLine
@@ -55,47 +55,47 @@
     margin: 5px 16px
 
 .errorDiv
-    display: flex
     align-items: center
+    display: flex
     margin: 16px 0
 
 .newInput
     background-color: #ffffff
     border-radius: 8px 0 0 8px
     border: 1px solid #1f343e
+    color: #6D7A80
     display: inline-block
     font-size: 20px
-    color: #6D7A80
     height: 64px
-    width: 76%
+    outline: 0
     text-align: center
     text-decoration: none
-    outline: 0
-    @media screen and (max-width: 768px)
-        width: 100%
+    width: 76%
+    @media screen and (max-width: 1012px)
         border-radius: 8px
-        height: 56px
         font-size: 16px
+        height: 56px
+        width: 100%
 
 .newButton
     background: #4EB3E3
+    border-left: 0
     border-radius: 0 8px 8px 0
     border: 1px solid #1f343e
+    color: #ffffff
     cursor: pointer
-    border-left: 0
     display: inline-block
     font-size: 20px
-    height: 64px
-    width: 24%
-    letter-spacing: 0px
-    color: #ffffff
-    margin-bottom: 185px
     font-weight: bold
-    @media screen and (max-width: 768px)
-        width: 100%
+    height: 64px
+    letter-spacing: 0px
+    margin-bottom: 185px
+    width: 24%
+    @media screen and (max-width: 1012px)
         border-radius: 8px
         border: 1px solid #1f343e
-        margin-top: 16px
-        height: 56px
         font-size: 16px
+        height: 56px
         margin-bottom: 71px
+        margin-top: 16px
+        width: 100%

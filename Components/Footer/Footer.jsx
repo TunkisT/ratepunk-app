@@ -12,7 +12,7 @@ import { useState } from 'react';
 import React from 'react';
 
 function Footer() {
-  const [size, setSize] = useState(1000);
+  const [size, setSize] = useState(1020);
 
   if (typeof window !== 'undefined') {
     addEventListener('resize', (event) => {
@@ -33,7 +33,7 @@ function Footer() {
           booking sites and runs a price comparison, so you can be confident in
           knowing you’re getting the best deal!
         </p>
-        {size >= 768 ? (
+        {size >= 1012 ? (
           <p className={css.rights}>© 2021 Ratepunk. All Rights Reserved.</p>
         ) : (
           ''
@@ -80,7 +80,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      {size < 768 ? (
+      {size < 1012 ? (
         <p className={css.rights}>© 2021 Ratepunk. All Rights Reserved.</p>
       ) : (
         ''
