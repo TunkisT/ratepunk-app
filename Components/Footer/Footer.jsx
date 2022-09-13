@@ -8,8 +8,21 @@ import LinkedIn from '../../assets/Icon awesome-linkedin-in.svg';
 import Twitter from '../../assets/Icon awesome-twitter.svg';
 import TikTok from '../../assets/Icon simple-tiktok.svg';
 import Email from '../../assets/email icon.svg';
+import { useState } from 'react';
+import React from 'react';
 
 function Footer() {
+  const [size, setSize] = useState(1000);
+
+  if (typeof window !== 'undefined') {
+    addEventListener('resize', (event) => {
+      setSize(window.innerWidth);
+    });
+    addEventListener('scroll', (event) => {
+      setSize(window.innerWidth);
+    });
+  }
+
   return (
     <div className={css.footer}>
       <div className={css.first}>
@@ -20,7 +33,11 @@ function Footer() {
           booking sites and runs a price comparison, so you can be confident in
           knowing you’re getting the best deal!
         </p>
-        <p className={css.rights}>© 2021 Ratepunk. All Rights Reserved.</p>
+        {size >= 768 ? (
+          <p className={css.rights}>© 2021 Ratepunk. All Rights Reserved.</p>
+        ) : (
+          ''
+        )}
       </div>
       <div className={css.second}>
         <div className={css.small}>
@@ -35,7 +52,7 @@ function Footer() {
         </div>
         <div className={css.small}>
           <div className={css.contacts}>
-              <p className={css.titles}>CONTACT</p>
+            <p className={css.titles}>CONTACT</p>
             <div className={css.emailDiv}>
               <Image className={css.emailLogo} src={Email} alt='email' />
               <p className={css.email}>hi@ratepunk.com</p>
@@ -63,6 +80,11 @@ function Footer() {
           </div>
         </div>
       </div>
+      {size < 768 ? (
+        <p className={css.rights}>© 2021 Ratepunk. All Rights Reserved.</p>
+      ) : (
+        ''
+      )}
     </div>
   );
 }
