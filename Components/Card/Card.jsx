@@ -23,7 +23,6 @@ function Card({ title, text }) {
 
     req.onreadystatechange = () => {
       if (req.readyState == XMLHttpRequest.DONE) {
-        console.log(req.responseText);
       }
     };
 
