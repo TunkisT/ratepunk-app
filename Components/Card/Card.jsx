@@ -78,6 +78,7 @@ function Card({ title, text }) {
             className={css.newInput}
             type='text'
             name='link'
+            disabled
           />
           <button type='submit' className={css.newButton}>
             Copy

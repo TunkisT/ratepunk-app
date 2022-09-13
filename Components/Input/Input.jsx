@@ -1,6 +1,6 @@
 import css from './Input.module.sass';
 
-function Input({ name, type, placeholder, handleChange }) {
+function Input({ name, type, placeholder, handleChange, disabled }) {
   const onChange = (event) => {
     handleChange(event.target.value);
   };
@@ -13,6 +13,7 @@ function Input({ name, type, placeholder, handleChange }) {
         placeholder={placeholder}
         required
         onChange={onChange}
+        disabled={disabled}
       />
     </div>
   );
