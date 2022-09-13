@@ -20,7 +20,7 @@ function GoogleLine() {
           <p className={css.main}>apple app store</p>
         </div>
       </div>
-      <p className={css.text}>☆☆☆☆☆ Chrome Store reviews</p>
+      <p className={css.cromeLine}>☆☆☆☆☆ Chrome Store reviews</p>
     </div>
   );
 }

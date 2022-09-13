@@ -24,7 +24,7 @@ function Footer() {
       <div className={css.second}>
         <div className={css.small}>
           <p className={css.titles}> QUICK LINKS</p>
-          <div>
+          <div className={css.listDiv}>
             <Link href='/'>Price Comparison</Link>
             <Link href='/'>Chrome Extension</Link>
             <Link href='/'>How It Works</Link>

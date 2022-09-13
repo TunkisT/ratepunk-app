@@ -1,58 +1,71 @@
 @import '@fontsource/caveat-brush'
 
 .stepCard
-    height: 669px
-    width: 45%
-    @media screen and (max-width: 768px) 
-      width: 100%
-      gap: 48px
-      height: 100%
-    
+  height: 669px
+  width: 43%
+  display: flex
+  flex-direction: column
+  @media screen and (max-width: 768px)
+    width: 100%
+    height: 100%
+    gap: 48px
+    margin: 48px 16px
 
 .listCard
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-around
-    flex-direction: row
-    margin-bottom: 64px
-    @media screen and (max-width: 768px) 
-      align-items: center
-      flex-direction: column
-      margin-bottom: 48px
-      margin-top: 48px
-      text-align: center
-    
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  flex-direction: row
+  margin-bottom: 64px
+  @media screen and (max-width: 768px)
+    align-items: center
+    flex-direction: column
+    margin: 0
+    text-align: center
+
+.listCard2
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  flex-direction: row
+  margin-bottom: 64px
+  @media screen and (max-width: 768px)
+    align-items: center
+    flex-direction: column-reverse
+    margin: 0
+    gap: 48px
+    text-align: center
 
 .element
-    width: 50%
-    @media screen and (max-width: 768px) 
-      width: 100%
-    
+  width: 50%
+  @media screen and (max-width: 768px)
+    width: 100%
 
 .step
-    letter-spacing: 1.6px
-    color: #4eb3e3
-    text-transform: uppercase
-    font-size: 20px
-    margin: 10px 0
-    @media screen and (max-width: 768px) 
-      font-size: 16px
-      letter-spacing: 1.28px
-    
+  letter-spacing: 1.6px
+  color: #4eb3e3
+  font-weight: bold
+  text-transform: uppercase
+  font-size: 20px
+  margin: 10px 0
+  @media screen and (max-width: 768px)
+    margin: 32px 0 16px 0
+    font-size: 16px
+    letter-spacing: 1.28px
 
 .title
-    color: #1f343e
-    font-family: 'Caveat Brush'
-    text-transform: uppercase
-    font-size: 32px
-    margin: 10px 0
-    @media screen and (max-width: 768px) 
-      font-size: 24px
-    
+  color: #1f343e
+  font-family: 'Caveat Brush'
+  text-transform: uppercase
+  font-size: 32px
+  margin: 10px 0
+  @media screen and (max-width: 768px)
+    margin: 0 0 24px 0
+    font-size: 24px
 
 .text
-    color: #1f343e
-    font-size: 20px
-    margin: 10px 0
-    @media screen and (max-width: 768px) 
-      font-size: 16px
+  color: #1f343e
+  font-size: 20px
+  margin: 10px 0
+  @media screen and (max-width: 768px)
+    font-size: 16px

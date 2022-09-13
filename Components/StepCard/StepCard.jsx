@@ -15,7 +15,7 @@ function StepCard() {
           <p className={css.text}>Refer friends with your unique referral link.</p>
         </div>
       </div>
-      <div className={css.listCard}>
+      <div className={css.listCard2}>
         <div className={css.element}>
           <p className={css.step}>step 2</p>
           <p className={css.title}>collect coins</p>
