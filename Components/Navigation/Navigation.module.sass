@@ -1,27 +1,30 @@
-.topNav 
+.topNav
   max-width: 1100px
   margin: 0 auto
   display: flex
   flex-direction: row
   align-items: center
   justify-content: space-between
-  height: 56px
+  height: 80px
   padding: 0 1rem
+  @media screen and (max-width: 768px)
+    height: 56px
 
-.menu 
+.menu
   display: flex
   flex-direction: row
   list-style-type: none
   margin: 0
   padding: 0
 
-.menu > li 
+.menu > li
   overflow: hidden
   font-size: 20px
-  color: #434a54
-  padding: 0.3rem 2rem
+  color: #434A54
+  padding: 22px 26px
 
-.menuButtonContainer 
+
+.menuButtonContainer
   display: none
   height: 100%
   width: 30px
@@ -30,12 +33,12 @@
   justify-content: center
   align-items: center
 
-.menuToggle 
+.menuToggle
   display: none
 
 .menuButton,
 .menuButton::before,
-.menuButton::after 
+.menuButton::after
   display: block
   background-color: #BDC1C3
   position: absolute
@@ -44,30 +47,30 @@
   transition: transform 100ms cubic-bezier(0.23, 1, 0.32, 1)
   border-radius: 4px
 
-.menuButton::before 
+.menuButton::before
   content: ''
   margin-top: -8px
 
-.menuButton::after 
+.menuButton::after
   content: ''
   margin-top: 8px
 
-.menuToggle:checked + .menuButtonContainer .menuButton::before 
+.menuToggle:checked + .menuButtonContainer .menuButton::before
   margin-top: 0px
   transform: rotate(405deg)
 
-.menuToggle:checked + .menuButtonContainer .menuButton 
+.menuToggle:checked + .menuButtonContainer .menuButton
   background: rgba(255, 255, 255, 0)
 
-.menuToggle:checked + .menuButtonContainer .menuButton::after 
+.menuToggle:checked + .menuButtonContainer .menuButton::after
   margin-top: 0px
   transform: rotate(-405deg)
 
-@media screen and (max-width: 768px) 
-  .menuButtonContainer 
+@media screen and (max-width: 768px)
+  .menuButtonContainer
     display: flex
-  
-  .menu 
+
+  .menu
     position: absolute
     top: 0
     margin-top: 56px
@@ -76,21 +79,21 @@
     width: 100%
     justify-content: center
     align-items: center
-  
-  .menuToggle ~ .menu li 
+
+  .menuToggle ~ .menu li
     height: 0
     margin: 0
     padding: 0
     border: 0
     align-items: center
     transition: height 100ms cubic-bezier(0.23, 1, 0.32, 1)
-    
-  .menuToggle:checked ~ .menu li 
+
+  .menuToggle:checked ~ .menu li
     height: 40px
     padding: 28px 16px
     transition: height 100ms cubic-bezier(0.23, 1, 0.32, 1)
-  
-  .menu > li 
+
+  .menu > li
     display: flex
     margin: 0
     width: 100%

@@ -8,8 +8,10 @@
     padding: 64px
     width: 50%
     @media screen and (max-width: 768px)
-        padding: 16px 32px
+        padding: 32px 16px
         width: 100%
+        margin: 0
+        min-height: 0
 
 .title
     font-family: 'Caveat Brush'
@@ -22,13 +24,18 @@
     text-transform: uppercase
     margin: 0
     padding-bottom: 32px
+    @media screen and (max-width: 768px)
+        padding-bottom: 24px
 
 .text
     padding-bottom: 40px
     text-align: left
+    font-size: 20px
     letter-spacing: 0px
     color: #1f343e
     margin: 0
+    @media screen and (max-width: 768px)
+        padding-bottom: 24px
 
 .error
     color: #ED6F82
@@ -58,13 +65,15 @@
     font-size: 20px
     color: #6D7A80
     height: 64px
-    width: 70%
+    width: 76%
     text-align: center
     text-decoration: none
     outline: 0
     @media screen and (max-width: 768px)
         width: 100%
         border-radius: 8px
+        height: 56px
+        font-size: 16px
 
 .newButton
     background: #4EB3E3
@@ -75,12 +84,16 @@
     display: inline-block
     font-size: 20px
     height: 64px
-    width: 30%
+    width: 24%
     letter-spacing: 0px
     color: #ffffff
-    margin-top: 1rem
-    margin-bottom: 153px
+    margin-bottom: 185px
+    font-weight: bold
     @media screen and (max-width: 768px)
         width: 100%
         border-radius: 8px
         border: 1px solid #1f343e
+        margin-top: 16px
+        height: 56px
+        font-size: 16px
+        margin-bottom: 71px
