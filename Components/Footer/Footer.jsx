@@ -25,11 +25,11 @@ function Footer() {
         <div className={css.small}>
           <p className={css.titles}> QUICK LINKS</p>
           <div>
-            <Link href='#'>Price Comparison</Link>
-            <Link href='#'>Chrome Extension</Link>
-            <Link href='#'>How It Works</Link>
-            <Link href='#'>Ratepunk Blog</Link>
-            <Link href='#'>Privacy Policy</Link>
+            <Link href='/'>Price Comparison</Link>
+            <Link href='/'>Chrome Extension</Link>
+            <Link href='/'>How It Works</Link>
+            <Link href='/'>Ratepunk Blog</Link>
+            <Link href='/'>Privacy Policy</Link>
           </div>
         </div>
         <div className={css.small}>

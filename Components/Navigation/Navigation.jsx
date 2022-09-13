@@ -14,13 +14,13 @@ function Navigation() {
         </label>
         <ul className={css.menu}>
           <li>
-            <Link href='#'>Chrome Extension</Link>
+            <Link href='/'>Chrome Extension</Link>
           </li>
           <li>
-            <Link href='#'>Price Comparison</Link>
+            <Link href='/'>Price Comparison</Link>
           </li>
           <li>
-            <Link href='#'>Blog</Link>
+            <Link href='/'>Blog</Link>
           </li>
         </ul>
       </section>
