@@ -6,20 +6,40 @@ import Img from '../../assets/success.jpg';
 import Image from 'next/image';
 
 function Card({ title, text }) {
-  const [lastEmail, setEmail] = useState('');
+  const [lastEmail, setEmail] = useState({
+    email: '',
+  });
   const [form, setForm] = useState('');
 
   function formHandler(e) {
     e.preventDefault();
     setForm('OK');
-    console.log('suveikia formos submit', lastEmail);
+    setJson();
+  }
+
+  function setJson() {
+    let req = new XMLHttpRequest();
+
+    req.onreadystatechange = () => {
+      if (req.readyState == XMLHttpRequest.DONE) {
+        console.log(req.responseText);
+      }
+    };
+
+    req.open('PUT', `https://api.jsonbin.io/v3/b/632045fca1610e638629458e`, true);
+    req.setRequestHeader('Content-Type', 'application/json');
+    req.setRequestHeader(
+      'X-Master-Key',
+      '$2b$10$sR65SR1hrDDDUps.W85mOu4qEUpIhUZEdQre/RIqRJHAEq6n2kNwW'
+    );
+    req.send(JSON.stringify(lastEmail));
   }
 
   return (
     <div className={css.card}>
       <p className={css.title}>{title}</p>
       <p className={css.text}>{text}</p>
-      <div >
+      <div>
         {form !== 'OK' ? (
           <p className={css.error}>Error state</p>
         ) : (
