@@ -7,6 +7,7 @@ import Facebook from '../../assets/Icon awesome-facebook-f.svg';
 import LinkedIn from '../../assets/Icon awesome-linkedin-in.svg';
 import Twitter from '../../assets/Icon awesome-twitter.svg';
 import TikTok from '../../assets/Icon simple-tiktok.svg';
+import Email from '../../assets/email icon.svg';
 
 function Footer() {
   return (
@@ -34,8 +35,11 @@ function Footer() {
         </div>
         <div className={css.small}>
           <div className={css.contacts}>
-            <p className={css.titles}>CONTACT</p>
-            <p>hi@ratepunk.com</p>
+              <p className={css.titles}>CONTACT</p>
+            <div className={css.emailDiv}>
+              <Image className={css.emailLogo} src={Email} alt='email' />
+              <p className={css.email}>hi@ratepunk.com</p>
+            </div>
           </div>
           <div className={css.contacts}>
             <p className={css.titles}>SOCIAL</p>

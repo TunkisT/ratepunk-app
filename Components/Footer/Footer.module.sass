@@ -11,6 +11,8 @@
         width: 100%
         flex-direction: column
         align-items: center
+        padding: 48px 32px
+        margin: 0
 
 .first
     display: flex
@@ -36,7 +38,7 @@
     justify-content: space-between
     @media screen and (max-width: 768px)
         width: 100%
-
+        padding-bottom: 32px
 
 .contacts
     @media screen and (max-width: 768px)
@@ -51,6 +53,9 @@
     padding: 0 0 24px 0
     margin: 0
     font-weight: bold
+    @media screen and (max-width: 768px)
+        font-size: 16px
+        padding: 0 0 23px 0
 
 .icon
     background: #4eb3e3
@@ -60,14 +65,11 @@
     width: 32px
     display: flex
     justify-content: center
-    // margin: 0
-    // padding: 0
 
 .iconList
     display: flex
     flex-wrap: wrap
     gap: 8px
-    // 
 
 .firstBody
     color: #1F343E
@@ -79,3 +81,14 @@
     font-size: 16px
     padding: 0
     margin: 0
+
+.email
+    padding: 0
+    margin: 0 0 0 16px
+    display: inline-block
+
+.emailDiv
+    display: flex
+    align-items: center
+    padding: 0
+    margin: 0 0 32px 0
